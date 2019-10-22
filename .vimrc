@@ -36,7 +36,20 @@ Plugin 'vim-scripts/vim-auto-save'
 " デフォルトで有効にする
 let g:auto_save = 1
 
+" ツリー型のファイル表示
+Plugin 'scrooloose/nerdtree'
+map <C-n> :NERDTreeToggle<CR>
 " All of your Plugins must be added before the following line
+
+" 差分を表示
+Plugin 'airblade/vim-gitgutter'
+
+" Ruby向けにendを自動挿入してくれる
+Plugin 'tpope/vim-endwise'
+
+" コメントON/OFFを手軽に実行
+Plugin 'tomtom/tcomment_vim'
+
 call vundle#end()            " required
 filetype plugin indent on    " required
 
