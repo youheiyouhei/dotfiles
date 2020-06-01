@@ -22,6 +22,17 @@ alias gg='git grep'
 alias gl='git log'
 alias gst='git stash'
 
+alias ls='ls -G'
+alias ll='ls -l'
+alias la='ls -a'
+
+alias ..='cd ..'
+alias desktop='cd ~/Desktop'
+
+alias d='docker'
+alias n='nvim'
+alias t='tmux'
+
 # 色を使用出来るようにする
 autoload -Uz colors
 colors
