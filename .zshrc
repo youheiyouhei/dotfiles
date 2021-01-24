@@ -32,6 +32,7 @@ alias desktop='cd ~/Desktop'
 alias d='docker'
 alias n='nvim'
 alias t='tmux'
+alias zp="open http://localhost:8000 && npx zenn preview"
 
 # 色を使用出来るようにする
 autoload -Uz colors
