@@ -64,3 +64,15 @@ setopt hist_ignore_space
 setopt hist_reduce_blanks
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 eval "$(gh completion -s zsh)"
+
+repoc () { 
+  gh repo create $1 --private -y
+  cd $1
+  echo "# $1" >> README.md
+  git init
+  git add README.md
+  git commit -m "first commit"
+  git branch -M main
+  git remote add origin git@github.com:youheiyouhei/$1.git
+  git push -u origin main
+}
