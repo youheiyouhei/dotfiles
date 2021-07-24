@@ -22,8 +22,8 @@
   # check the local terminfo database and use `alacritty` if it is
   # available, otherwise `xterm-256color` is used.
   #TERM: alacritty
-
-#window:
+window:
+  startup_mode: SimpleFullscreen
   # Window dimensions (changes require restart)
   #
   # Number of lines/columns (not pixels) in the terminal. The number of columns
@@ -102,6 +102,8 @@
   #multiplier: 3
 
 # Font configuration
+font:
+  size: 14.0
 #font:
   # Normal (roman) font face
   #normal:
