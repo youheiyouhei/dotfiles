@@ -36,7 +36,10 @@ alias desktop='cd ~/Desktop'
 
 alias d='docker'
 alias n='nvim'
+
 alias t='tmux'
+alias tns='tmux new -s'
+
 alias zp='open http://localhost:8000 && npx zenn preview'
 
 alias goi='goimports -w -l'
