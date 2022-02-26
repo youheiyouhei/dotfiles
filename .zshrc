@@ -35,7 +35,10 @@ alias ..='cd ..'
 alias desktop='cd ~/Desktop'
 
 alias d='docker'
+alias dc='docker-compose'
+alias dcl='docker-compose logs -f'
 alias n='nvim'
+alias m='make'
 
 alias t='tmux'
 alias tns='tmux new -s'
