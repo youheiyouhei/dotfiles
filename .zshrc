@@ -84,3 +84,5 @@ repoc () {
   git remote add origin git@github.com:youheiyouhei/$1.git
   git push -u origin main
 }
+
+eval "$(starship init zsh)"
