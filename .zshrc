@@ -87,3 +87,9 @@ repoc () {
 }
 
 eval "$(starship init zsh)"
+
+# ターミナルからIntelliJでプロジェクトを開く
+idea() {
+  open -na "IntelliJ IDEA CE" --args nosplash "$@"
+}
+
