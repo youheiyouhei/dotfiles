@@ -9,7 +9,7 @@ local config = wezterm.config_builder()
 config.color_scheme = 'Japanesque (Gogh)'
 config.automatically_reload_config = false
 
-config.font_size = 15.0
+config.font_size = 18.0
 
 config.leader = { key = 'a', mods = 'CTRL', timeout_milliseconds = 2000 }
 
@@ -61,6 +61,11 @@ config.keys = {
     mods = 'LEADER',
     action = wezterm.action.ToggleFullScreen,
   },
+  {
+    key = 'c',
+    mods = 'LEADER',
+    action = wezterm.action.ActivateCopyMode,
+  }
 }
 
 -- and finally, return the configuration to wezterm
