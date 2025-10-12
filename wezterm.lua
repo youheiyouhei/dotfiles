@@ -9,7 +9,17 @@ local config = wezterm.config_builder()
 config.color_scheme = 'Japanesque (Gogh)'
 config.automatically_reload_config = false
 
+-- 日本語（漢字）をサポートするフォント設定
+config.font = wezterm.font_with_fallback {
+  { family = 'Menlo', weight = 'Regular' },
+  { family = 'Hiragino Sans', weight = 'Regular' },
+  'Apple Color Emoji',
+}
 config.font_size = 18.0
+
+-- フォントレンダリングの最適化
+config.freetype_load_target = 'Normal'
+config.freetype_render_target = 'Normal'
 
 config.leader = { key = 'a', mods = 'CTRL', timeout_milliseconds = 2000 }
 
