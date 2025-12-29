@@ -6,8 +6,9 @@ local config = wezterm.config_builder()
 
 -- This is where you actually apply your config choices
 
+config.automatically_reload_config = true
+
 config.color_scheme = 'Japanesque (Gogh)'
-config.automatically_reload_config = false
 
 -- 日本語（漢字）をサポートするフォント設定
 config.font = wezterm.font_with_fallback {
@@ -15,7 +16,10 @@ config.font = wezterm.font_with_fallback {
   { family = 'Hiragino Sans', weight = 'Regular' },
   'Apple Color Emoji',
 }
-config.font_size = 18.0
+config.font_size = 16.0
+config.window_background_opacity = 0.8
+config.macos_window_background_blur = 20
+config.native_macos_fullscreen_mode = false
 
 -- フォントレンダリングの最適化
 config.freetype_load_target = 'Normal'
