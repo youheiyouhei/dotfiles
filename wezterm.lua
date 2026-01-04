@@ -7,6 +7,7 @@ local config = wezterm.config_builder()
 -- This is where you actually apply your config choices
 
 config.automatically_reload_config = true
+config.use_ime = true
 
 config.color_scheme = 'Japanesque (Gogh)'
 
