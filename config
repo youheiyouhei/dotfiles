@@ -1,0 +1,25 @@
+font-size = 14
+adjust-cell-height = 10%
+
+background-opacity = 0.90
+
+window-padding-x = 20
+window-padding-y = 20
+window-padding-balance = true
+
+# --- キーバインド ---
+keybind = ctrl+,=new_split:down
+keybind = ctrl+.=new_split:right
+keybind = ctrl+h=goto_split:left
+keybind = ctrl+j=goto_split:down
+keybind = ctrl+k=goto_split:up
+keybind = ctrl+l=goto_split:right
+
+# --- 操作性 ---
+# URLを自動検出（Cmd+クリックで開く）
+link-url = true
+# 選択しただけでクリップボードにコピー
+copy-on-select = true
+# クリップボードの読み書きを許可
+clipboard-read = allow
+clipboard-write = allow
