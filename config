@@ -10,10 +10,11 @@ window-padding-balance = true
 # --- キーバインド ---
 keybind = ctrl+,=new_split:down
 keybind = ctrl+.=new_split:right
-keybind = ctrl+h=goto_split:left
-keybind = ctrl+j=goto_split:down
-keybind = ctrl+k=goto_split:up
-keybind = ctrl+l=goto_split:right
+# Neovimに渡すためコメントアウト
+keybind = super+h=goto_split:left
+keybind = super+j=goto_split:down
+keybind = super+k=goto_split:up
+keybind = super+l=goto_split:right
 
 # --- 操作性 ---
 # URLを自動検出（Cmd+クリックで開く）
